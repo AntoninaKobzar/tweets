@@ -1,7 +1,5 @@
 .card {
   position: relative;
-  width: 380px;
-  height: 460px;
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
@@ -10,8 +8,14 @@
   );
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
+  width: 380px;
+  height: 460px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ebd8ff;
 }
-
 .card::before {
   content: "";
   height: 8px;
@@ -29,15 +33,16 @@
 }
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: -8px;
 }
+
 .picture {
-  background-image: url(../images/picture2.png);
+  background-image: url(../../image/cardImg.png);
   height: 168px;
   width: 308px;
-  margin-top: 28px;
-  margin-bottom: 88px;
 }
 .avatar {
   position: absolute;
@@ -52,7 +57,7 @@
   border-radius: 50%;
 }
 .avatar_picture {
-  background-image: url(../images/avatar.png);
+  background-image: url(../../image/avatar.png);
   background-color: #5736a3;
   position: absolute;
   width: 62px;
@@ -61,45 +66,41 @@
   top: 9.42px;
   border-radius: 50%;
 }
-.card_sign {
+.tweets_text {
+  margin-top: 88px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.tweets_text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #ebd8ff;
   margin-bottom: 16px;
 }
 .followers_text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #ebd8ff;
+  display: flex;
+  justify-content: center;
   margin-bottom: 26px;
 }
-.follow_btn {
-  padding: 14px 28px;
-  width: 196px;
-  height: 50px;
+.button {
+  padding: 14px 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
-  font-family: "Montserrat";
-  font-style: normal;
+  border: 0;
   font-weight: 600;
   font-size: 18px;
-  line-height: 22px;
   text-transform: uppercase;
+  line-height: 21.94px;
   color: #373737;
-  margin-bottom: 36px;
+  width: 196px;
+  cursor: pointer;
+}
+.buttonFollowing {
+  background-color: #5cd3a8;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
